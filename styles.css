@@ -7,15 +7,25 @@
 }
 
 .navbar {
-  background-color: rgb(242, 242, 242);
-  height: 5rem;
+  position: fixed;
+  backdrop-filter: blur(20px);
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: rgba(242, 242, 242, 0.372);
+  height: 5rem;
   display: flex;
   align-items: center;
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+.navbar button {
+  font-size: medium;
 }
 
 .navbar h1 {
   margin-left: 1rem;
+  flex: 1; /* Allow h1 to grow and take available space */
 }
 
 .navbar h1,
@@ -24,8 +34,10 @@
 }
 
 .nav-links {
+  width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* Align buttons to the right */
+  margin-right: 1rem; /* Add space on the right side */
 }
 
 .btn {
@@ -49,6 +61,7 @@ button {
 
 .container {
   scroll-snap-type: y mandatory;
+  padding-top: 3rem;
 }
 
 section {
@@ -181,7 +194,6 @@ a {
     width: auto;
   }
 
-  
   .nav-links {
     margin-top: 1rem;
     justify-content: space-between;
