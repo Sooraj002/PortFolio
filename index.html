@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sooraj Nambiar - MERN Stack Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar slide-in">
+      <h1 id="typingText">Sooraj Nambiar</h1>
+      <div class="nav-links slide-in">
+        <button class="btn slide-in">Home</button>
+        <button class="btn slide-in">Resume</button>
+        <button id="scrollToBottomBtn" class="btn btn-3 slide-in">
+          Contact Me
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <section class="first-block slide-in">
+        <div class="content-left slide-in">
+          <div class="element slide-in"><p>Sooraj Nambiar</p></div>
+          <div class="heading slide-in">
+            <h2 id="typingHeading">
+              Building Innovative and User-Friendly Websites
+            </h2>
+          </div>
+          <div class="text-main slide-in">
+            <p>With a strong focus on MERN stack development,</p>
+            <p>
+              I have successfully built several full-stack projects <br />
+              that are both functional and visually appealing.
+            </p>
+            <p>
+              My expertise lies in creating authentic and trustworthy
+              <br />websites that provide seamless user experiences.
+            </p>
+          </div>
+        </div>
+        <div class="img slide-in">
+          <img class="main-img" src="assets/image.bmp" alt="image" />
+        </div>
+      </section>
+      <section class="skills slide-in">
+        <h2 id="typingSkillHeading">Skills</h2>
+        <br /><br />
+        <h3 id="typingSkillText">
+          Building Modern Web Applications Using Technologies Such as
+        </h3>
+        <div class="second-block slide-in">
+          <div class="tech slide-in">
+            <img id="mongo" class="logo" src="assets/mongo.png" alt="" />
+            <hr />
+            <label for="mongo">Mongo DB</label>
+          </div>
+          <div class="tech slide-in">
+            <img id="express" class="logo" src="assets/express.png" alt="" />
+            <hr />
+            <label for="express">Express JS</label>
+          </div>
+          <div class="tech slide-in">
+            <img id="react" class="logo" src="assets/react.png" alt="" />
+            <hr />
+            <label for="react">React JS</label>
+          </div>
+          <div class="tech slide-in">
+            <img id="node" class="logo" src="assets/node.png" alt="" />
+            <hr />
+            <label for="node">Node JS</label>
+          </div>
+        </div>
+        <div class="cards slide-in">
+          <div class="card slide-in">
+            <h3>Front-end</h3>
+            <br />
+            <hr />
+            <br />
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascrip</li>
+              <li>React JS</li>
+            </ul>
+          </div>
+          <div class="card slide-in">
+            <h3>Back-end</h3>
+            <br />
+            <hr />
+            <br />
+            <ul>
+              <li>Node JS</li>
+              <li>Express JS</li>
+              <li>Mongo DB</li>
+              <li>Passport</li>
+            </ul>
+          </div>
+          <div class="card slide-in">
+            <h3>Others</h3>
+            <br />
+            <hr />
+            <br />
+            <ul>
+              <li>Github</li>
+              <li>API's</li>
+              <li>Python</li>
+              <li>C</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="slide-in">
+      <h2>Get in Touch</h2>
+      <br /><br />
+      <div class="foot slide-in">
+        <div class="email slide-in">
+          <i></i>
+          <h3>Email</h3>
+          <br />
+          <p>Send me an email at:</p>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFqzlScsdQJMbPdvLFlGnXKBrTLLWwCczsvkZKbfLjnxtJGzwkdMghZssKCVCDQHppZLKq"
+            ><b>soorajnambiar8@gmail.com</b></a
+          >
+        </div>
+        <br /><br />
+        <div class="socials slide-in">
+          <a href="https://www.instagram.com/_._._sooraj_._._/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          &nbsp;
+          <a
+            href="https://www.linkedin.com/in/sooraj-nambiar-37b137280/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Add slide-in animation to elements when the page loads
+      document.addEventListener("DOMContentLoaded", () => {
+        const elementsToAnimate = document.querySelectorAll(".slide-in");
+
+        elementsToAnimate.forEach((element) => {
+          element.style.animationDelay = `${Math.random() * 0.5}s`; // Randomize animation delay
+        });
+      });
+    </script>
+  </body>
+</html>

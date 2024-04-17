@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Mono", monospace;
+  /* flex-wrap: wrap; */
+}
+
+.navbar {
+  background-color: rgb(242, 242, 242);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  margin-left: 1rem;
+}
+
+.navbar h1,
+.nav-links {
+  width: 50%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  padding: 0.3rem 1rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-3 {
+  border: solid black 3px;
+  transition: 0.3s;
+}
+
+.btn-3:hover {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.first-block {
+  display: flex;
+  height: fit-content;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5rem 1rem;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  margin-left: 2rem;
+  /* padding: 2rem; */
+}
+
+.img {
+  flex: 1;
+  float: right;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+}
+
+.main-img {
+  border-radius: 3rem;
+}
+
+.element,
+.heading,
+.text-main {
+  padding: 1rem;
+}
+
+.skills {
+  height: fit-content;
+  margin: 6rem 1rem;
+  padding-top: 6rem;
+}
+
+.second-block {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 0rem;
+}
+/* footer img{
+   width: 70%;
+} */
+
+.skills h2,
+.skills h3 {
+  text-align: center;
+}
+
+/* Apply text alignment center to label elements within .tech divs */
+.tech label {
+  display: block; /* Ensure labels behave as block-level elements */
+  text-align: center; /* Center-align the text within labels */
+  margin-top: 5px; /* Optional: Add spacing between image and label */
+}
+
+.tech img {
+  height: 90px;
+  object-fit: contain;
+  width: 90px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 15%;
+  height: fit-content;
+  /* border: 3px black solid; */
+  padding: 4rem;
+  border-radius: 1rem;
+  background-color: rgb(216, 233, 254);
+}
+.card h3 {
+  text-align: center;
+}
+footer {
+  padding: 3rem;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  scale: 1.2;
+}
+
+.socials i {
+  scale: 1.7;
+}
+
+.foot {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    height: 3rem;
+    width: auto;
+  }
+
+  
+  .nav-links {
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .btn {
+    padding: 0.5rem;
+  }
+}
+/* Define slide-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start offscreen (50px down) */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position (0px) */
+  }
+}
+
+/* Apply animation to elements with the 'slide-in' class */
+.slide-in {
+  animation: slideIn 1.5s ease forwards;
+}
