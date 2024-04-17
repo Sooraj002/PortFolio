@@ -1,4 +1,3 @@
-// Wait for the DOM content to fully load
 document.addEventListener("DOMContentLoaded", function () {
   // Get a reference to the button element
   var scrollToBottomBtn = document.getElementById("scrollToBottomBtn");
@@ -11,45 +10,43 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth", // This smoothens the scrolling behavior
     });
   });
-});
 
-const textElements = [
-  // { elementId: 'typingText', text: 'Sooraj Nambiar' },
-  {
-    elementId: "typingHeading",
-    text: "Building Innovative and User-Friendly Websites",
-  },
-  // { elementId: 'typingSkillHeading', text: 'Skills' },
-  {
-    elementId: "typingSkillText",
-    text: "Building Modern Web Applications Using MERN-Stack",
-  },
-];
+  const textElements = [
+    {
+      elementId: "typingHeading",
+      text: "Building Innovative and User-Friendly Websites",
+    },
+    {
+      elementId: "typingSkillText",
+      text: "Building Modern Web Applications Using MERN-Stack",
+    },
+  ];
 
-function typeAndBackspace(elementId, text, speed) {
-  const targetElement = document.getElementById(elementId);
-  let isTyping = true;
-  let index = 0;
+  function typeAndBackspace(elementId, text, speed) {
+    const targetElement = document.getElementById(elementId);
+    let isTyping = true;
+    let index = 0;
 
-  function animateText() {
-    if (isTyping) {
-      targetElement.textContent = text.substring(0, index++);
-    } else {
-      targetElement.textContent = text.substring(0, index--);
+    function animateText() {
+      if (isTyping) {
+        targetElement.textContent = text.substring(0, index++);
+      } else {
+        targetElement.textContent = text.substring(0, index--);
+      }
+
+      if (index > text.length) {
+        isTyping = false;
+      } else if (index < 0) {
+        isTyping = true;
+      }
+
+      setTimeout(animateText, speed);
     }
 
-    if (index > text.length) {
-      isTyping = false;
-    } else if (index < 0) {
-      isTyping = true;
-    }
-
-    setTimeout(animateText, speed);
+    animateText();
   }
 
-  animateText();
-}
-
-textElements.forEach(({ elementId, text }) => {
-  typeAndBackspace(elementId, text, 100); // Adjust speed as needed (milliseconds)
+  textElements.forEach(({ elementId, text }) => {
+    typeAndBackspace(elementId, text, 100); // Adjust speed as needed (milliseconds)
+  });
 });

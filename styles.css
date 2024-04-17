@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Noto Sans Mono", monospace;
   /* flex-wrap: wrap; */
+  scroll-behavior: smooth;
 }
 
 .navbar {
