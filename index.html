@@ -23,7 +23,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-
   </head>
   <body>
     <div class="navbar slide-in">
@@ -130,6 +129,44 @@
           </div>
         </div>
       </section>
+      <section class="project-section">
+        <h2>My Projects</h2>
+        <br>
+        <div class="pros">
+          <div class="pro">
+            <img class="pro-img" src="assets/Project1.png" alt="" />
+            <div class="pro-body">
+              <p>
+                This website utilizes the Wikipedia API to fetch search results
+                based on user queries. It then displays the top 500 results in a
+                clean and organized format, making it easy for users to find
+                relevant information quickly.
+              </p>
+              <a href="https://wiki-search.onrender.com/"
+                ><button class="p-btn">
+                  Visit <i class="fa-solid fa-location-arrow"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="pro">
+            <img class="pro-img" src="assets/Project2.png" alt="" />
+            <div class="pro-body">
+              <p>
+                Simple Simon Game The Simple Simon game is a classic electronic
+                game that tests memory and pattern recognition skills. In this
+                game, players are presented with a sequence of colors that they
+                must replicate by pressing corresponding buttons or keys. The
+                challenge lies in remembering and repeating the increasingly
+                longer sequences correctly.
+              </p>
+              <a href="https://simon-game-azal.onrender.com/"
+                ><button class="p-btn">
+                  Visit <i class="fa-solid fa-location-arrow"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="slide-in">
       <h2>Get in Touch</h2>
@@ -158,20 +195,6 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Function to scroll to the bottom of the page
-        const scrollToBottom = () => {
-          const footer = document.querySelector("footer");
-          footer.scrollIntoView({ behavior: "smooth" });
-        };
-
-        // Attach click event listener to the 'Contact Me' button
-        const scrollToBottomBtn = document.getElementById("scrollToBottomBtn");
-        if (scrollToBottomBtn) {
-          scrollToBottomBtn.addEventListener("click", scrollToBottom);
-        }
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
