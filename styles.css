@@ -187,34 +187,65 @@ a {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 784px) {
   .navbar {
-    flex-direction: row;
+    /* flex-direction: column; */
     height: 3rem;
-    width: auto;
+    width: 100%;
   }
 
   .nav-links {
-    margin-top: 1rem;
-    justify-content: space-between;
+    display: none;
   }
   .btn {
     padding: 0.5rem;
+  }
+
+  .first-block{
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 30%;
+    margin: 2rem;
+  }
+  .main-img{
+    width: 70%;
+  }
+  .skills{
+    padding: 0;
+  }
+
+  .second-block{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tech{
+    width: 30%;
   }
 }
 /* Define slide-in animation */
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(-50px); /* Start offscreen (50px down) */
+    transform: translateY(+50px);
+    scale: 2; /* Start offscreen (50px down) */
   }
   to {
     opacity: 1;
     transform: translateY(0); /* End at normal position (0px) */
+    scale: 1;
   }
 }
 
 /* Apply animation to elements with the 'slide-in' class */
 .slide-in {
-  animation: slideIn 1.5s ease forwards;
+  animation: slideIn 1s ease forwards;
 }
