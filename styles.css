@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans Mono", monospace;
+  /* font-family: "Noto Sans Mono", monospace; */
   /* flex-wrap: wrap; */
   scroll-behavior: smooth;
 }
@@ -172,7 +172,7 @@ section {
 
 .pro {
   width: 30%;
-  /* text-align: center; */
+  padding: 0.3rem;
   height: fit-content;
   padding: 1rem;
   border-radius: 1rem;
@@ -194,6 +194,7 @@ ul {
 } */
 .pro-img {
   width: 100%;
+  border-radius: 0.8rem;
 }
 
 footer {
