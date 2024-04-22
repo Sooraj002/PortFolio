@@ -195,7 +195,7 @@ ul {
 footer {
   padding: 3rem;
   background-color: rgb(244, 244, 244);
-  background-color: ;
+  /* background-color: ; */
   display: flex;
   flex-direction: column;
   justify-content: center;
