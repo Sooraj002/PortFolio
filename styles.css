@@ -265,6 +265,16 @@ a {
 
   .pros{
     flex-direction: column;
+    width: 100%;
+    justify-content:center ;
+    align-items: center;
+    height: max-content;
+  }
+
+  .pro{
+    width: 70%;
+    padding: 2rem;
+    margin: 2rem;
   }
 
   .second-block {
@@ -278,6 +288,10 @@ a {
   .navbar h1 {
     font-size: large;
   }
+
+  .project-section{
+height: max-content;
+  }
 }
 /* Define slide-in animation */
 @keyframes slideIn {
@@ -285,13 +299,11 @@ a {
     opacity: 0;
     transform: translateY(+80px);
     scale: 2; /* Start offscreen (50px down) */
-    filter: blur(9px);
   }
   to {
     opacity: 1;
     transform: translateY(0); /* End at normal position (0px) */
     scale: 1;
-    filter: blur(0px);
   }
 }
 
