@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: "Noto Sans Mono", monospace; */
-  /* flex-wrap: wrap; */
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -16,7 +15,7 @@
   height: 5rem;
   display: flex;
   align-items: center;
-  z-index: 1000; /* Ensure navbar stays on top of other content */
+  z-index: 1000;
 }
 
 .navbar button {
@@ -25,7 +24,7 @@
 
 .navbar h1 {
   margin-left: 1rem;
-  flex: 1; /* Allow h1 to grow and take available space */
+  flex: 1;
 }
 
 .navbar h1,
@@ -66,8 +65,6 @@ button {
   background-color: black;
   color: white;
 }
-
-
 
 .container {
   scroll-snap-type: y mandatory;
@@ -127,9 +124,7 @@ section {
   justify-content: space-evenly;
   padding: 5rem 0rem;
 }
-/* footer img{
-   width: 70%;
-} */
+
 
 .skills h2,
 .skills h3,
@@ -200,6 +195,7 @@ ul {
 footer {
   padding: 3rem;
   background-color: rgb(244, 244, 244);
+  background-color: ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,19 +208,124 @@ a {
   scale: 1.2;
 }
 
-.socials i {
-  scale: 1.7;
+.email {
+  padding: 1rem;
 }
 
-.foot {
+/* .socials i,
+.email i {
+  scale: 1.7;
+} */
+
+.email button {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  height: 3rem;
+}
+
+/* .foot {
   width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  flex-direction: row;
+} */
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+  scale: 0.7;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.5s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
 }
 
 /* Responsive Design */
@@ -264,17 +365,17 @@ a {
     padding: 0;
   }
 
-  .pros{
+  .pros {
     flex-direction: column;
     width: 100%;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     height: max-content;
   }
 
-  .pro{
+  .pro {
     width: 70%;
-    padding: 2rem;
+    padding: 0.3rem;
     margin: 2rem;
   }
 
@@ -284,21 +385,21 @@ a {
     justify-content: center;
   }
   .tech {
-    width: 30%;
+    margin-bottom: 1.5rem;
   }
   .navbar h1 {
     font-size: large;
   }
 
-  .project-section{
-height: max-content;
+  .project-section {
+    height: max-content;
   }
 }
 /* Define slide-in animation */
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(+80px);
+    transform: translateY(-40px);
     scale: 2; /* Start offscreen (50px down) */
   }
   to {
