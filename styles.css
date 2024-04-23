@@ -35,8 +35,8 @@
 .nav-links {
   width: 50%;
   display: flex;
-  justify-content: space-around; /* Align buttons to the right */
-  margin-right: 1rem; /* Add space on the right side */
+  justify-content: space-around;
+  margin-right: 1rem;
 }
 
 .btn {
@@ -59,11 +59,12 @@ button {
 }
 
 .p-btn {
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-top: 0.7rem;
   border: 2px solid black;
   background-color: black;
   color: white;
+  border-radius: 1rem;
 }
 
 .container {
@@ -74,9 +75,6 @@ button {
 section {
   height: 100vh;
   scroll-snap-align: start;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .first-block {
@@ -125,18 +123,16 @@ section {
   padding: 5rem 0rem;
 }
 
-
 .skills h2,
 .skills h3,
 .project-section h2 {
   text-align: center;
 }
 
-/* Apply text alignment center to label elements within .tech divs */
 .tech label {
-  display: block; /* Ensure labels behave as block-level elements */
-  text-align: center; /* Center-align the text within labels */
-  margin-top: 5px; /* Optional: Add spacing between image and label */
+  display: block;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .tech img {
@@ -156,7 +152,13 @@ section {
   height: fit-content;
   padding: 4rem;
   border-radius: 1rem;
-  background-color: rgb(216, 233, 254);
+  box-shadow: 0px 0px 15px #00000027;
+  transition: 0.7s;
+}
+
+.card:hover,
+.pro:hover {
+  box-shadow: 10px 10px 40px #00000027;
 }
 
 .pros {
@@ -171,7 +173,11 @@ section {
   height: fit-content;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: rgb(216, 233, 254);
+  box-shadow: 0px 0px 15px #00000027;
+  transition: 0.7s;
+}
+
+.pro:hover {
 }
 
 .pro-body {
@@ -182,11 +188,6 @@ ul {
   list-style-type: none;
 }
 
-/* .projects {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 .pro-img {
   width: 100%;
   border-radius: 0.8rem;
@@ -195,7 +196,6 @@ ul {
 footer {
   padding: 3rem;
   background-color: rgb(244, 244, 244);
-  /* background-color: ; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,26 +212,16 @@ a {
   padding: 1rem;
 }
 
-/* .socials i,
 .email i {
   scale: 1.7;
-} */
-
-.email button {
+}
+*/ .email button {
   background-color: black;
   padding: 1rem;
-  border-radius: 0.3rem;
+  border-radius: 3rem;
   color: white;
   height: 3rem;
 }
-
-/* .foot {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-} */
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -328,12 +318,10 @@ a {
   fill: #c13584;
 }
 
-/* Responsive Design */
 @media (max-width: 784px) {
   .navbar {
-    /* flex-direction: column; */
     height: 3rem;
-    width: 100%;
+
   }
 
   .nav-links {
@@ -395,21 +383,19 @@ a {
     height: max-content;
   }
 }
-/* Define slide-in animation */
 @keyframes slideIn {
   from {
     opacity: 0;
     transform: translateY(-40px);
-    scale: 2; /* Start offscreen (50px down) */
+    scale: 2;
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* End at normal position (0px) */
+    transform: translateY(0);
     scale: 1;
   }
 }
 
-/* Apply animation to elements with the 'slide-in' class */
 .slide-in {
   animation: slideIn 1.2s ease forwards;
 }
